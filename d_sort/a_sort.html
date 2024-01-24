@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정렬</title>
+
+    <style>
+
+        /* text-align, line-height 안의 inline 요소 정렬 */
+        
+        #horizon {
+            width: 300px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        #wrap {
+            width: 500px;
+            height: 300px;
+            border: 1px sloid gray;
+            /* 부모 요소에 넣어야 한다. */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #container, #article {
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            line-height: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="horizon">수평 정렬</div>
+    <div id="wrap">
+        <div id="container"></div>
+        <div id="article"></div>
+    </div>
+</body>
+</html>
